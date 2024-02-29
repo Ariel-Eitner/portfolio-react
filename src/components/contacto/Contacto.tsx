@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import linkedInIcon from "../../components/icons/linkedin.svg";
 import mailIcon from "../../components/icons/gmail.svg";
 import githubIcon from "../../components/icons/github.svg";
@@ -28,16 +27,16 @@ export const Contacto = () => {
     },
   ];
 
-  const [copySuccess, setCopySuccess] = useState("");
+  // const [copySuccess, setCopySuccess] = useState("");
 
-  const copyToClipboard = (
-    e: React.MouseEvent<HTMLButtonElement>,
-    text: string
-  ) => {
-    navigator.clipboard.writeText(text);
-    setCopySuccess("Copiado!");
-    setTimeout(() => setCopySuccess(""), 2000); // Limpiar mensaje después de 2 segundos
-  };
+  // const copyToClipboard = (
+  //   e: React.MouseEvent<HTMLButtonElement>,
+  //   text: string
+  // ) => {
+  //   navigator.clipboard.writeText(text);
+  //   setCopySuccess("Copiado!");
+  //   setTimeout(() => setCopySuccess(""), 2000); // Limpiar mensaje después de 2 segundos
+  // };
 
   return (
     <div>
@@ -70,7 +69,7 @@ export const Contacto = () => {
           </li>
         ))}
       </ul>
-      {copySuccess}
+      {/* {copySuccess} */}
     </div>
   );
 };
