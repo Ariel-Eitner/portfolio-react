@@ -1,0 +1,59 @@
+.inicio-section {
+  height: 100vh;
+  background-image: url("/src/assets/6.jpeg"); /* Ajusta esto a la ubicación de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center; /* Centra la imagen en la sección */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inicio-section::before {
+  content: ""; /* Necesario para que el pseudo-elemento se muestre */
+  position: absolute; /* Posiciona el pseudo-elemento sobre la imagen de fondo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ajusta la opacidad aquí; negro con opacidad del 50% */
+  z-index: 1; /* Asegúrate de que el pseudo-elemento se sitúe sobre la imagen de fondo */
+}
+
+.inicio-content .perfil-imagen {
+  margin-bottom: 1rem;
+  width: 150px; /* Ajusta este valor según el tamaño que desees para tu imagen */
+  height: 150px; /* Asegúrate de que el ancho y alto sean iguales para un círculo perfecto */
+  border-radius: 50%; /* Esto creará la forma circular */
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: 20;
+}
+
+.inicio-content .perfil-imagen img {
+  width: 100%;
+  height: auto; /* Esto mantendrá la proporción de tu imagen */
+}
+
+.inicio-content h1 {
+  position: relative;
+  z-index: 20;
+  color: white; /* El color del texto */
+  font-size: 2.5rem; /* Ajusta el tamaño del texto según necesites */
+  margin-bottom: 0.5rem;
+}
+
+.inicio-content p {
+  position: relative;
+  z-index: 20;
+  color: white; /* El color del texto */
+  font-size: 1.2rem; /* Ajusta el tamaño del texto según necesites */
+  margin-bottom: 1rem;
+}

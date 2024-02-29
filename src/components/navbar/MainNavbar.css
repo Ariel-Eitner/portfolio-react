@@ -1,0 +1,15 @@
+.navbar-color-change {
+  background-color: transparent !important;
+  transition: background-color 0.4s ease-out;
+}
+
+.navbar-color-change .navbar-brand,
+.navbar-color-change .nav-link {
+  color: black !important; /* Cambia este color según necesites */
+  cursor: pointer !important;
+}
+
+/* Estilos adicionales para el efecto sticky y transparente */
+.navbar {
+  transition: background-color 0.4s ease-out;
+}

@@ -1,0 +1,42 @@
+.services-section {
+  padding: 4rem;
+  background: #fff; /* O el color de fondo que prefieras */
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas */
+  gap: 1rem; /* Espacio entre los elementos del grid */
+}
+
+.service-item {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #f2f2f2; /* Color de fondo para cada ítem */
+}
+
+.icon-placeholder {
+  /* Estilos temporales para los placeholders de los íconos */
+  background: transparent;
+  height: 60px; /* O la altura que desees para tus íconos */
+  margin-bottom: 1rem;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+  }
+}

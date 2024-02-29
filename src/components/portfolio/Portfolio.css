@@ -1,0 +1,21 @@
+.portfolio-section {
+  padding: 4rem;
+  background: #fff; /* O el color de fondo que prefieras */
+}
+
+/* Aquí puedes agregar estilos personalizados para el carrusel */
+.carousel-item a img {
+  /* Establece la altura del carrusel o cualquier otro estilo que necesites */
+  height: 500px; /* Ejemplo de altura fija */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  padding: 1rem; /* Espacio interno alrededor del texto */
+  border-radius: 0.5rem; /* Bordes redondeados para el fondo */
+  margin-bottom: 1rem; /* Separación del borde inferior del carrusel */
+  margin: 0 auto;
+  left: 10%; /* Centrado horizontal si se usa max-width menor a 100% */
+  right: 10%; /* Centrado horizontal si se usa max-width menor a 100% */
+  bottom: 20px; /* Posición desde el borde inferior del carrusel */
+}
